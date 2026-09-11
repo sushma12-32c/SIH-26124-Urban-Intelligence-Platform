@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH 26218 - Impact Assessment Slide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-container {
+            width: 1400px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        
+        .slide-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .slide-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .slide-header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+        
+        .impact-points {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 40px;
+            background: #f8f9fa;
+        }
+        
+        .impact-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .impact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+        
+        .impact-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .impact-content {
+            padding: 20px;
+        }
+        
+        .impact-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .impact-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .impact-text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 1400px) {
+            .impact-points {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .impact-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .slide-header h1 {
+                font-size: 32px;
+            }
+        }
+        
+        .footer {
+            background: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- HEADER -->
+        <div class="slide-header">
+            <h1>🎯 IMPACT ASSESSMENT</h1>
+            <p>SIH 26218 - Drones & Robots for Emergency Response</p>
+        </div>
+        
+        <!-- 5 IMPACT POINTS WITH IMAGES -->
+        <div class="impact-points">
+            
+            <!-- POINT 1: Lives Saved -->
+            <div class="impact-card">
+                <img src="https://images.unsplash.com/photo-1576091160550-112173f7f869?w=400&h=200&fit=crop" alt="Medical Emergency" class="impact-image">
+                <div class="impact-content">
+                    <div class="impact-icon">🏥</div>
+                    <div class="impact-title">Lives Saved Through Faster Response</div>
+                    <div class="impact-text">Reduces emergency response time from 45+ minutes to 8-10 minutes; increases survival rates by 60-70% in critical "Golden Hour" interventions.</div>
+                </div>
+            </div>
+            
+            <!-- POINT 2: Search & Rescue -->
+            <div class="impact-card">
+                <img src="https://images.unsplash.com/photo-1579033100-9f60a05a9973?w=400&h=200&fit=crop" alt="Drone Search & Rescue" class="impact-image">
+                <div class="impact-content">
+                    <div class="impact-icon">🚁</div>
+                    <div class="impact-title">Enhanced Search & Rescue</div>
+                    <div class="impact-text">AI-powered thermal imaging locates disaster victims in difficult terrain; covers 100+ hectares per mission vs. manual search taking weeks.</div>
+                </div>
+            </div>
+            
+            <!-- POINT 3: Remote Delivery -->
+            <div class="impact-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop" alt="Medical Delivery" class="impact-image">
+                <div class="impact-content">
+                    <div class="impact-icon">📦</div>
+                    <div class="impact-title">Remote Medical Delivery at Scale</div>
+                    <div class="impact-text">Autonomous delivery of AEDs, trauma kits, and first-aid supplies to unreachable locations; enables real-time intervention before responders arrive.</div>
+                </div>
+            </div>
+            
+            <!-- POINT 4: Rescuer Safety -->
+            <div class="impact-card">
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop" alt="Robot Safety" class="impact-image">
+                <div class="impact-content">
+                    <div class="impact-icon">🛡️</div>
+                    <div class="impact-title">Enhanced Rescuer Safety</div>
+                    <div class="impact-text">Robots safely enter hazardous environments (chemical spills, collapsed buildings); reduces rescuer casualties by 80% in high-risk operations.</div>
+                </div>
+            </div>
+            
+            <!-- POINT 5: Cost Efficiency & Scalability -->
+            <div class="impact-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" alt="Scalable Solution" class="impact-image">
+                <div class="impact-content">
+                    <div class="impact-icon">📊</div>
+                    <div class="impact-title">Cost Efficiency & Scalability</div>
+                    <div class="impact-text">Deployable across India's 750+ districts with 40-50% reduction in operational costs; autonomous fleet handles multiple simultaneous incidents.</div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <strong>Smart India Hackathon 2026 | SIH 26218 - Student Innovation</strong> | Drones & Robots for Medical Emergencies & Rescue Operations
+        </div>
+    </div>
+</body>
+</html>
